@@ -1,3 +1,5 @@
+# rubocop: disable Metrics/MethodLength,Metrics/CyclomaticComplexity,Metrics/AbcSize,Layout/LineLength
+
 require 'telegram/bot'
 require_relative '../lib/request_joke.rb'
 
@@ -45,3 +47,5 @@ class Bot
     end
   end
 end
+
+# rubocop: enable Metrics/MethodLength,Metrics/CyclomaticComplexity,Metrics/AbcSize,Layout/LineLength
