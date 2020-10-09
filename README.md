@@ -6,9 +6,9 @@
 
 ## :video_camera: Video Presentation
 
-[Video Demo Link]()
+[Video Demo Link](https://www.loom.com/share/3951b72cfd714963808aa9f5d9d0ba1c)
 
-## :hammer: Built with:
+## :hammer: Built with
 
 - Ruby
 - Ruby gem Telegram-bot,
@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple steps:
 - Run the program using: `ruby bin/main.rb`
 - Stop the program with: `"Ctrl + C" (windows and Linux) or "Command + C" (Apple)`
 
-## 📝 How to use the bot?
+## 📝 How to use the bot'?'
 
 - When the program is running go to telegram.
 
