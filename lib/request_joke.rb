@@ -1,5 +1,5 @@
 require 'json'
-require 'rest_client'
+require 'rest-client'
 
 class JokeRequest
   def initialize
