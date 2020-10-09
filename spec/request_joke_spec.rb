@@ -1,6 +1,4 @@
-require 'json'
-require 'rest-client'
-require_relative '../lib/request_joke'
+require_relative './lib/request_joke'
 
 describe JokeRequest do
   let(:new_joke) { JokeRequest.new }
