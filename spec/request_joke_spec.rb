@@ -1,4 +1,4 @@
-require '../lib/request_joke.rb'
+require_relative '../lib/request_joke'
 
 describe JokeRequest do
   let(:new_joke) { JokeRequest.new }
