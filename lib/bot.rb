@@ -21,7 +21,7 @@ class Bot
         case message.text
         when '/start'
           @category.random_joke
-          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, Welcome to music motivation, this bot will give you random youtube links of music depending of the category that you choose. Use /start to start the bot, /stop to stop the bot, You can choose beetwing this categories just write any of this: /dev, /history, /political, /celebrity, /animal, /science /random")
+          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, Welcome to chuckjoke, this bot will show you a Chuck Norris joke based on the category you choose. Use /start to start the bot, /stop to stop the bot, You can choose beetwing these categories: /dev, /history, /political, /celebrity, /animal, /science /random")
         when '/dev'
           bot.api.send_message(chat_id: message.chat.id, text: @category.joke('dev'), date: message.date)
         when '/history'
@@ -39,7 +39,7 @@ class Bot
         when '/stop'
           bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
         else
-          bot.api.send_message(chat_id: message.chat.id, text: "Wrong entry, #{message.from.first_name}, please entry one of this options:/start, /dev, /history, /political, /celebrity, /animal, /science, /random, /stop")
+          bot.api.send_message(chat_id: message.chat.id, text: "Wrong entry, #{message.from.first_name}, please choose one of these options:/start, /dev, /history, /political, /celebrity, /animal, /science, /random, /stop")
         end
       end
     end
