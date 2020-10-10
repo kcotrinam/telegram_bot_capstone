@@ -9,7 +9,7 @@ class JokeRequest
   end
 
   def joke(category)
-    RestClient.get("https://api.chucknorris.io/jokes/random?category=#{category}") do |response, result|
+    RestClient.get("#{@url_random}?category=#{category}") do |response, result|
       if response.code == 200
         result = JSON.parse response.to_str
         @joke = result['value']
