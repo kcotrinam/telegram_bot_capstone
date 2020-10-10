@@ -43,9 +43,9 @@ To get a local copy up and running follow these simple steps:
 
 - Sign in Telegram
 
-- When the program is running go to telegram.
+- Open to telegram.
 
-- Search for: @chuckjokebot
+- Search for: @norjoke_bot
 
 - Click on start
 
