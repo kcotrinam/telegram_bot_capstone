@@ -33,17 +33,21 @@ To get a local copy up and running follow these simple steps:
 ## 📝 Setup
 
 - Open the terminal.
-- Install dependencies using: `bundler install`
+- Install dependencies using: `bundle install`
 - Run the program using: `ruby bin/main.rb`
 - Stop the program with: `"Ctrl + C" (windows and Linux) or "Command + C" (Apple)`
 
-## 📝 How to use the bot'?'
+## 📝 How to use the bot?
+
+- Download Telegram or enter to https://web.telegram.org/#/login
+
+- Sign in Telegram
 
 - When the program is running go to telegram.
 
 - Search for: @chuckjokebot
 
-- click on start
+- Click on start
 
 - Follow instructions
 
