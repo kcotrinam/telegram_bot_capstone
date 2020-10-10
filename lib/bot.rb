@@ -17,13 +17,15 @@ class Bot
     end
   end
 
+  private
+
   def start_bot
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text
         when '/start'
           @category.random_joke
-          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, Welcome to chuckjoke, this bot will show you a Chuck Norris joke based on the category you choose. Use /start to start the bot, /stop to stop the bot, You can choose beetwing these categories: /dev, /history, /political, /celebrity, /animal, /science /random")
+          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, Welcome to chuckjoke. This bot will show you a Chuck Norris joke based on the category you choose. Use /start to start the bot, /stop to stop the bot, You can choose beetwing these categories: /dev, /history, /political, /celebrity, /animal, /science /random")
         when '/dev'
           bot.api.send_message(chat_id: message.chat.id, text: @category.joke('dev'), date: message.date)
         when '/history'
