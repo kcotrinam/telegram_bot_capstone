@@ -43,7 +43,7 @@ To get a local copy up and running follow these simple steps:
 
 - Sign in Telegram
 
-- Open to telegram.
+- Open telegram.
 
 - Search for: @norjoke_bot
 
