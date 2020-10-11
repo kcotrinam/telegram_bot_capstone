@@ -10,6 +10,7 @@ class Bot
     @token = ENV['TELEGRAM_API_KEY']
     @category = JokeRequest.new
     begin
+      print 'Ready! Go and have fun...'
       start_bot
     rescue Telegram::Bot::Exceptions::ResponseError => e
       puts "Bot not connecting properly. Presenting: #{e}"
