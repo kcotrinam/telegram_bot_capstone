@@ -71,7 +71,7 @@ Feel free to check the [issues page](https://github.com/kcotrinam/telegram_bot_c
 
 Give a :star: if you like this project!.
 
-## :grey_exclamation: Acknowlegment
+## :grey_exclamation: Acknowledgment
 
 - To [Microverse](https://www.microverse.org/)
 - To Stand up team
