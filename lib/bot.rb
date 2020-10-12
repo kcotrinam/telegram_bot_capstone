@@ -18,7 +18,7 @@ class Bot
   end
 
   def instruction
-    'Use /start to start the bot, /stop to stop the bot, You can choose beetwing these categories: /dev, /history, /political, /celebrity, /animal, /science /random'
+    'Use /start to start the bot, /stop to stop the bot, You can choose beetwing these categories: /dev /science /random'
   end
 
   private
