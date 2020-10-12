@@ -3,9 +3,6 @@ require_relative '../lib/request_joke.rb'
 require 'dotenv/load'
 
 class Bot
-  attr_reader :token
-  attr_reader :category
-
   def initialize
     @token = ENV['TELEGRAM_API_KEY']
     @category = JokeRequest.new
@@ -17,14 +14,14 @@ class Bot
     end
   end
 
+  private
+
   def instruction
     'Use /start , /stop, You can choose beetwing these categories: /dev /science /random'
   end
 
-  private
-
   def start_bot
-    Telegram::Bot::Client.run(token) do |bot|
+    Telegram::Bot::Client.run(@token) do |bot|
       bot.listen do |message|
         case message.text
         when '/start'
