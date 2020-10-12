@@ -18,7 +18,7 @@ class Bot
   end
 
   def instruction
-    'Use /start to start the bot, /stop to stop the bot, You can choose beetwing these categories: /dev /science /random'
+    'Use /start , /stop, You can choose beetwing these categories: /dev /science /random'
   end
 
   private
@@ -29,7 +29,7 @@ class Bot
         case message.text
         when '/start'
           @category.random_joke
-          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, Welcome to chuckjoke. #{instruction}")
+          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, #{instruction}")
         when '/dev'
           bot.api.send_message(chat_id: message.chat.id, text: @category.joke('dev'), date: message.date)
         when '/science'
@@ -39,7 +39,7 @@ class Bot
         when '/stop'
           bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
         else
-          bot.api.send_message(chat_id: message.chat.id, text: "Wrong entry, #{message.from.first_name}, please, #{instruction}")
+          bot.api.send_message(chat_id: message.chat.id, text: "Wrong! #{message.from.first_name}, #{instruction}")
         end
       end
     end
