@@ -74,7 +74,8 @@ Give a :star: if you like this project!.
 ## :grey_exclamation: Acknowlegment
 
 - To [Microverse](https://www.microverse.org/)
-- Stand up team
+- To Stand up team
+- To [Chuck Norris API](https://api.chucknorris.io/)
 
 ## 📝 License
 
