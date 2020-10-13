@@ -1,3 +1,5 @@
+# rubocop: disable Metrics/MethodLength,Metrics/CyclomaticComplexity,Metrics/AbcSize,Layout/LineLength
+
 require 'telegram/bot'
 require_relative '../lib/request_joke.rb'
 require 'dotenv/load'
@@ -17,7 +19,7 @@ class Bot
   private
 
   def instruction
-    'Use /start , /stop, You can choose beetwing these categories: /dev /science /random'
+    'Use /start , /stop, You can choose beetwing these categories: /dev /science /random /money /celebrity /explicit /sport'
   end
 
   def start_bot
@@ -31,6 +33,14 @@ class Bot
           bot.api.send_message(chat_id: message.chat.id, text: @category.joke('dev'), date: message.date)
         when '/science'
           bot.api.send_message(chat_id: message.chat.id, text: @category.joke('science'), date: message.date)
+        when '/money'
+          bot.api.send_message(chat_id: message.chat.id, text: @category.joke('money'), date: message.date)
+        when '/celebrity'
+          bot.api.send_message(chat_id: message.chat.id, text: @category.joke('celebrity'), date: message.date)
+        when '/explicit'
+          bot.api.send_message(chat_id: message.chat.id, text: @category.joke('explicit'), date: message.date)
+        when '/sport'
+          bot.api.send_message(chat_id: message.chat.id, text: @category.joke('sport'), date: message.date)
         when '/random'
           bot.api.send_message(chat_id: message.chat.id, text: @category.random_joke.to_s, date: message.date)
         when '/stop'
@@ -42,3 +52,5 @@ class Bot
     end
   end
 end
+
+# rubocop: enable Metrics/MethodLength,Metrics/CyclomaticComplexity,Metrics/AbcSize,Layout/LineLength
